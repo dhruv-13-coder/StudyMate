@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Watch Revision Video</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #2c3e50;
+    }
+    .btn {
+      background: #8e44ad;
+      color: white;
+      padding: 12px 25px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #6c3483;
+    }
+    video {
+      margin-top: 30px;
+      width: 80%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .text {
+      margin-top: 20px;
+      font-size: 1.1em;
+      color: #34495e;
+    }
+  </style>
+</head>
+<body>
+<div style="background:#2c3e50; padding:15px; text-align:center;">
+  <a href="index.html" style="color:white; margin:0 15px; text-decoration:none; font-weight:bold;">🏠 Home</a>
+  <a href="upload.html" style="color:white; margin:0 15px; text-decoration:none; font-weight:bold;">📄 Upload</a>
+  <a href="audio.html" style="color:white; margin:0 15px; text-decoration:none; font-weight:bold;">🔊 Audio</a>
+  <a href="video.html" style="color:white; margin:0 15px; text-decoration:none; font-weight:bold;">🎬 Video</a>
+</div>
+  <h1>🎬 Watch Your Revision Video</h1>
+  <button class="btn" onclick="alert('Video playback started')">Play Summary Video</button>
+  <video controls>
+    <source src="sample.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="text">
+    <p>This is a sample video summary of your study material. You can replace <code>sample.mp4</code> with your own generated video.</p>
+  </div>
+</body>
+</html>
